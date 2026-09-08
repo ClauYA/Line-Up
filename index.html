@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lineup — The waitlist that texts your customers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo"><span class="dot"></span> Lineup</a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-actions">
+      <a href="#" class="login">Log in</a>
+      <a href="#pricing" class="btn-green">Sign up</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <svg id="ham-open" width="20" height="20" fill="none" stroke="#1a1a18" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg id="ham-close" width="20" height="20" fill="none" stroke="#1a1a18" stroke-width="2" viewBox="0 0 24 24" style="display:none"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#features" onclick="closeMenu()">Features</a>
+    <a href="#how-it-works" onclick="closeMenu()">How It Works</a>
+    <a href="#pricing" onclick="closeMenu()">Pricing</a>
+    <a href="#faq" onclick="closeMenu()">FAQ</a>
+    <hr />
+    <a href="#">Log in</a>
+    <a href="#pricing" class="btn-green" onclick="closeMenu()">Sign up</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section style="padding: 0;">
+  <div class="hero">
+    <div class="hero-text">
+      <p class="label">For barbershops, counters &amp; walk-in anything</p>
+      <h1>The waitlist that texts your customers.</h1>
+      <p class="hero-sub">Retire the clipboard and the crowded bench. Walk-ins join your line by text, see their spot, and get pinged when they're up — so they wait at the coffee shop, not in your doorway.</p>
+      <form class="hero-form" onsubmit="return false;">
+        <input type="email" placeholder="you@yourshop.com" />
+        <button class="btn-green">Start free</button>
+      </form>
+      <p class="hero-fine">Free for one location · No credit card · Set up in 10 minutes</p>
+    </div>
+    <div class="phone">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="phone-header">
+          <p>Warren Street Barbers</p>
+          <small>Today 11:42 AM</small>
+        </div>
+        <div class="phone-body">
+          <div class="bubble in">You're on the list, Marcus! You're <strong>#4</strong> — about <strong>35 min</strong>. We'll text when you're up. Reply LEAVE to step out. ✂️</div>
+          <div class="bubble out">Running 5 late, grabbing coffee ☕</div>
+          <div class="bubble in">Got it — slid you back 2 spots. You're #6 now. We'll text back when chair 3 finishes 🔔</div>
+          <div class="bubble ping">🎉 You're up, Marcus! Come on in.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGO STRIP -->
+<div class="logo-strip">
+  <p class="label">Keeping the line moving at</p>
+  <div class="logos">
+    <span>Warren Street Barbers</span>
+    <span>Mamone's</span>
+    <span>Delancey Bagels</span>
+    <span>Two Street Water Ice</span>
+    <span>Casco Bay Property Care</span>
+    <span>Black Tide</span>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="container">
+    <p class="label">Why Lineup</p>
+    <h2>Built for shops, not call centers</h2>
+    <p class="section-sub">No apps to download, no hardware to buy, no training video longer than a haircut.</p>
+    <div class="grid-3">
+      <div class="card">
+        <span class="card-icon">💬</span>
+        <h3>Customers just text</h3>
+        <p>They text your number and they're in. Works on every mobile made this century — nothing to install.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">⏱</span>
+        <h3>Honest wait times</h3>
+        <p>Lineup learns your real pace and quotes waits you can stand behind. No more "about twenty minutes" said four times an hour.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">📊</span>
+        <h3>Know your rush</h3>
+        <p>See your average wait and no-show rates by week — so you staff Saturdays like it's actually Saturday.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works" class="bg-green-light">
+  <div class="container">
+    <p class="label">How it works</p>
+    <h2>Live before your next rush</h2>
+    <p class="section-sub" style="margin-bottom:40px;"></p>
+    <div class="grid-3">
+      <div class="card">
+        <div class="step-num">1</div>
+        <h3>Claim your number.</h3>
+        <p>Sign up, pick your local Lineup number, and put it on the door: "Text JOIN to get in line."</p>
+      </div>
+      <div class="card">
+        <div class="step-num">2</div>
+        <h3>Run the list from anything.</h3>
+        <p>Your line lives in the browser — the phone, the tablet, the register, or the phone in your apron pocket.</p>
+      </div>
+      <div class="card">
+        <div class="step-num">3</div>
+        <h3>Tap when you're ready.</h3>
+        <p>Hit "Next" and the right person walks in two minutes later. That's the whole product.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP VIEW -->
+<section>
+  <div class="container">
+    <div class="two-col">
+      <div class="col">
+        <div class="list-mockup">
+          <div class="list-header">
+            <strong>Saturday's List</strong>
+            <small>Warren Street Barbers · 4 waiting</small>
+          </div>
+          <div class="list-row">
+            <div>
+              <div class="list-row-name">Marcus B.</div>
+              <div class="list-row-detail">Trim + lineup · joined 11:22</div>
+            </div>
+            <span class="badge badge-green">Texted</span>
+          </div>
+          <div class="list-row">
+            <div>
+              <div class="list-row-name">Elena B.</div>
+              <div class="list-row-detail">Two kids · joined 11:43</div>
+            </div>
+            <span class="badge badge-amber">+25 min</span>
+          </div>
+          <div class="list-row">
+            <div>
+              <div class="list-row-name">Ty &amp; Jordan</div>
+              <div class="list-row-detail">Two kids cuts · joined 11:54</div>
+            </div>
+            <span class="badge badge-amber">+40 min</span>
+          </div>
+          <div class="list-row">
+            <div>
+              <div class="list-row-name">Ray M.</div>
+              <div class="list-row-detail">First-time client · joined 11:57</div>
+            </div>
+            <span class="badge badge-gray">In chair</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <p class="label">The shop view</p>
+        <h2>One screen.<br>The whole line.</h2>
+        <ul class="check-list" style="margin-top:24px;">
+          <li><span class="check-icon">✓</span>Drag-to-reorder, tap to text.</li>
+          <li><span class="check-icon">✓</span>Regulars, walk-outs, and "my kid's in the car" — real lines are messy. Your list handles it.</li>
+          <li><span class="check-icon">✓</span>Two-way replies. "Running 5 late" lands in your list, not in a voicemail nobody checks.</li>
+          <li><span class="check-icon">✓</span>No-show forgiveness. Missed their turn? One tap slides them back two spots instead of off the list.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="bg-cream">
+  <div class="container">
+    <p class="label">Word on the street</p>
+    <h2>Shops that ditched the bench</h2>
+    <p class="section-sub"></p>
+    <div class="grid-3">
+      <div class="card flex-col">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Saturdays used to be twelve guys staring at me from the bench. Now they're at the coffee shop until I text them. My shop got quieter and my chairs got busier."</blockquote>
+        <cite>Andre W. <small>Warren Street Barbers, Roxbury</small></cite>
+      </div>
+      <div class="card flex-col">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Lunch rush, we quote real waits now instead of guessing. People grab a spot in line before they even leave the office. Line's longer, complaints are gone."</blockquote>
+        <cite>Sol M. <small>Mamone's Steaks &amp; Hoagies, South Philly</small></cite>
+      </div>
+      <div class="card flex-col">
+        <div class="stars">★★★★★</div>
+        <blockquote>"We use it for machine turns on Sundays. Customers stopped hovering over each other's dryers. Honestly worth it for the peace alone."</blockquote>
+        <cite>Priya N. <small>Doorstep Wash &amp; Fold, Astoria</small></cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="bg-dark">
+  <div class="container">
+    <p class="label">Pricing</p>
+    <h2>Costs less than one<br>no-show a day</h2>
+    <p class="section-sub">Month to month, cancel anytime. Two months free if you pay annually.</p>
+    <div class="grid-3">
+      <div class="price-card">
+        <p class="plan-name">Starter</p>
+        <p class="price">Free</p>
+        <p class="price-sub">For trying it out.</p>
+        <ul class="price-features">
+          <li><span class="tick">✓</span> 1 location</li>
+          <li><span class="tick">✓</span> 50 texts per day</li>
+          <li><span class="tick">✓</span> Today's list &amp; wait estimates</li>
+          <li><span class="tick">✓</span> Email support</li>
+        </ul>
+        <button class="btn-outline">Start free</button>
+      </div>
+      <div class="price-card featured">
+        <div class="badge-popular">Most popular</div>
+        <p class="plan-name">Shop</p>
+        <p class="price">$39</p>
+        <p class="price-sub">For one busy location that's done apologizing for the wait.</p>
+        <ul class="price-features">
+          <li><span class="tick">✓</span> Unlimited texts &amp; two-way replies</li>
+          <li><span class="tick">✓</span> Smart wait estimates</li>
+          <li><span class="tick">✓</span> 3 staff logins</li>
+          <li><span class="tick">✓</span> Booked-hours &amp; no-show reports</li>
+          <li><span class="tick">✓</span> Priority support from actual humans</li>
+        </ul>
+        <button class="btn-green">Start 14-day trial</button>
+      </div>
+      <div class="price-card">
+        <p class="plan-name">Block</p>
+        <p class="price">$89</p>
+        <p class="price-sub">For multi-location operators and the ambitious.</p>
+        <ul class="price-features">
+          <li><span class="tick">✓</span> Up to 5 locations</li>
+          <li><span class="tick">✓</span> Everything in Shop</li>
+          <li><span class="tick">✓</span> Custom sender name</li>
+          <li><span class="tick">✓</span> Roll-up reporting across locations</li>
+          <li><span class="tick">✓</span> Onboarding call with our team</li>
+        </ul>
+        <button class="btn-outline">Talk to us</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container" style="max-width:720px;">
+    <p class="label">FAQ</p>
+    <h2>Fair questions</h2>
+    <div class="faq-list" style="margin-top:40px;">
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span>Do my customers need to download anything?</span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">No. They text your Lineup number and they're on the list. No app, no account, no password. It works on every phone made in the last fifteen years.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span>What equipment does the shop need?</span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">Nothing extra. You manage the list from any browser — your phone, a tablet, a laptop on the counter. If it has a browser and internet, it runs Lineup.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span>Is there a contract?</span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">No contracts. Month-to-month on every plan. Pay annually and get two months free, but you can cancel anytime with no fees.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span>What happens if I go over the free plan's texts?</span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">We'll let you know before you hit the cap and give you a chance to upgrade. We won't cut off your line mid-rush without warning.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <h2>Your next Saturday could<br>be the quiet kind.</h2>
+  <p>Set up Lineup tonight, tape the sign to the door tomorrow, and let the bench collect dust.</p>
+  <a href="#" class="btn-white">Start free — no card</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><span class="dot" style="width:8px;height:8px;border-radius:50%;background:#1c6b45;display:inline-block;"></span> Lineup</div>
+      <p>The waitlist that texts your customers. Made for the shops that make the neighborhood.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">help@lineup.example</a>
+      <a href="#">Status</a>
+      <a href="#">Privacy &amp; Terms</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Lineup, Inc. All rights reserved.</p>
+    <a href="#">Back to top ↑</a>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const open = document.getElementById('ham-open');
+    const close = document.getElementById('ham-close');
+    const isOpen = menu.classList.toggle('open');
+    open.style.display = isOpen ? 'none' : 'block';
+    close.style.display = isOpen ? 'block' : 'none';
+  }
+  function closeMenu() {
+    document.getElementById('mobile-menu').classList.remove('open');
+    document.getElementById('ham-open').style.display = 'block';
+    document.getElementById('ham-close').style.display = 'none';
+  }
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector('.faq-icon');
+    const isOpen = answer.classList.toggle('open');
+    icon.classList.toggle('open', isOpen);
+  }
+</script>
+</body>
+</html>
